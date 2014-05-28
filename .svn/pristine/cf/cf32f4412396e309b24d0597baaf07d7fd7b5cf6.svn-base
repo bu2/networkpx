@@ -1,0 +1,5 @@
+{
+	CFBundleDisplayName = GriP;
+	CFBundleExecutable = GriP;
+	NSPrincipalClass = GPPrefsListController;
+}

@@ -1,0 +1,4 @@
+{
+	UIKeyboardLayoutClass = layout.plist;
+	PSBundle = Preferences;
+}

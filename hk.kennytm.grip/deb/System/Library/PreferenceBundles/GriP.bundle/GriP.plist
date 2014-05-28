@@ -1,0 +1,84 @@
+{
+title = GriP;
+items = (
+	{ cell = PSGroupCell; },
+	{ cell = PSButtonCell;
+		label = Preview;
+		action = preview; },
+
+	{ cell = PSGroupCell; },
+	{ cell = PSLinkListCell;
+		detail = PSListItemsController;
+		id = MessageLog;
+		label = "GriP Message Log";
+		detail = GPMessageLogPrefsController; },
+
+	{ cell = PSGroupCell; },
+	{ cell = PSLinkListCell;
+		detail = PSListItemsController;
+		label = Location;
+		id = Location;
+		validTitles = (
+			"\UE237 Top left",
+			"\UE236 Top right",
+			"\UE239 Bottom left",
+			"\UE238 Bottom right"
+		);
+		validValues = (0,1,2,3);
+		get = "get:";
+		set = "set:with:"; },
+	{ cell = PSLinkListCell;
+		detail = PSListItemsController;
+		label = Theme;
+		id = ActiveTheme;
+		titlesDataSource = allThemeTitles_Themes;
+		valuesDataSource = allThemeValues_Themes;
+		get = "get:";
+		set = "set:with:"; },
+	{ cell = PSLinkCell;
+		label = Customize;
+		id = Customize;
+		action = "lazyLoadBundle:";
+		enabled = 0; },
+	{ cell = PSLinkListCell;
+		detail = PSListItemsController;
+		label = "Theme (Modal table)";
+		id = ActiveTableTheme;
+		titlesDataSource = allThemeTitles_TableThemes;
+		valuesDataSource = allThemeValues_TableThemes;
+		get = "get:";
+		set = "set:with:"; },
+
+	{ cell = PSGroupCell; label = "Per-Priority Settings"; },
+	{ cell = PSLinkCell;
+		label = Emergency;
+		priorityLevel = 4;
+		detail = GPPerPrioritySettingsController; },
+	{ cell = PSLinkCell;
+		label = "High priority";
+		priorityLevel = 3;
+		detail = GPPerPrioritySettingsController; },
+	{ cell = PSLinkCell;
+		label = Normal;
+		priorityLevel = 2;
+		detail = GPPerPrioritySettingsController; },
+	{ cell = PSLinkCell;
+		label = Moderate;
+		priorityLevel = 1;
+		detail = GPPerPrioritySettingsController; },
+	{ cell = PSLinkCell;
+		label = "Very low priority";
+		priorityLevel = 0;
+		detail = GPPerPrioritySettingsController; },
+
+	{ cell = PSGroupCell; },
+	{ cell = PSLinkCell;
+		label = "Game mode";
+		detail = GPGameModeController; },
+
+	{ cell = PSGroupCell; },
+	{ cell = PSLinkCell;
+		label = "Per-App Settings"; 
+		detail = GPPerAppSettingsController; },
+);
+}

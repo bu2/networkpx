@@ -1,0 +1,27 @@
+{
+	control = {
+		Labels = {
+			beginTapCount = 1;
+			beginTapHold = 2;
+			endsWithTouchUp = YES;
+			showCmdbar = NO;
+		};
+		"Text fields" = {
+			taps = 1;
+			endsWithLongHold = YES;
+			endsWithTouchDown = NO;
+		};
+	};
+	order = (
+		(
+			Cut,
+			Copy,
+			Paste,
+		),
+		(
+			Mail,
+			Google,
+		),
+		(),
+	);
+}

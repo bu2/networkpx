@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if [[ $1 == configure ]]; then
+	if [[ -e /Library/iKeyEx/Config.plist ]]; then
+		mv /Library/iKeyEx/Config.plist /var/mobile/Library/Preferences/hk.kennytm.iKeyEx3.plist
+	elif [[ -e /var/mobile/Library/Keyboard/iKeyEx\:\:config.plist ]]; then
+		mv /var/mobile/Library/Keyboard/iKeyEx\:\:config.plist /var/mobile/Library/Preferences/hk.kennytm.iKeyEx3.plist
+	fi;
+	touch /var/mobile/Library/Preferences/hk.kennytm.iKeyEx3.plist;
+	chown mobile:mobile /var/mobile/Library/Preferences/hk.kennytm.iKeyEx3.plist;
+	chmod a+rw /var/mobile/Library/Preferences/hk.kennytm.iKeyEx3.plist;
+	/usr/bin/iKeyEx-KBMan sync;
+elif [[ $1 == triggered ]]; then
+	/usr/bin/iKeyEx-KBMan refresh;
+fi
+exit 0;

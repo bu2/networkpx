@@ -1,0 +1,40 @@
+{
+Filter={Bundles=(com.apple.springboard);};
+Localizations={
+	en = {
+		"Memory Critical" = "Memory Critical";
+		"Memory Urgent" = "Memory Urgent";
+		"Memory Warning" = "Memory Warning";
+	};
+	es = {
+		"Memory Critical" = "Memoria Crítica";
+		"Memory Urgent" = "Memoria Urgente";
+		"Memory Warning" = "Memoria Aviso";
+	};
+	it = {
+		"Memory Critical" = "Memoria Critica";
+		"Memory Urgent" = "Memoria Urgente";
+		"Memory Warning" = "Memoria Avviso";
+	};
+	nl = {
+		"Memory Critical" = "Geheugen Kritiek";
+		"Memory Urgent" = "Geheugen Urgent";
+		"Memory Warning" = "Geheugenwaarschuwing";
+	};
+	pl = {
+		"Memory Critical" = "Pamięć Krytyczna";
+		"Memory Urgent" = "Pilne ostrzeżenie";
+		"Memory Warning" = "Ostrzeżenie o pamięci";
+	};
+	zh_CN = {
+		"Memory Critical" = "內存严重不足";
+		"Memory Urgent" = "內存非常不足";
+		"Memory Warning" = "內存不足";
+	};
+	zh_TW = {
+		"Memory Critical" = "記憶體嚴重不足";
+		"Memory Urgent" = "記憶體非常不足";
+		"Memory Warning" = "記憶體不足";
+	};
+};
+}
